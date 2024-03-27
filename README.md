@@ -6,15 +6,7 @@
 
 [![Community Forum][forum-shield]][forum]
 
-_Integration to integrate with [notify_event][notify_event]._
-
-**This integration will set up the following platforms.**
-
-Platform | Description
--- | --
-`binary_sensor` | Show something `True` or `False`.
-`sensor` | Show info from blueprint API.
-`switch` | Switch something `True` or `False`.
+This integration will create notify services that just create events, this allows the creation of custom notify services through automations.
 
 ## Installation
 
