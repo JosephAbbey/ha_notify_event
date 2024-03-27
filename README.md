@@ -8,6 +8,12 @@
 
 This integration will create notify services that just create events, this allows the creation of custom notify services through automations.
 
+```yaml
+notify:
+  - platform: notify_event
+    name: abcd
+```
+
 ## Installation
 
 1. Using the tool of choice open the directory (folder) for your HA configuration (where you find `configuration.yaml`).
