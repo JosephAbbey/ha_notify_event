@@ -7,5 +7,5 @@
     "documentation": "https://github.com/josephabbey/ha_notify_intent/",
     "iot_class": "local_push",
     "issue_tracker": "https://github.com/josephabbey/ha_notify_intent/issues/",
-    "version": "0.0.0"
+    "version": "1.0.0"
 }
