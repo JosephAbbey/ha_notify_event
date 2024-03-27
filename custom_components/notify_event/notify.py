@@ -2,19 +2,11 @@
 
 from __future__ import annotations
 
-import logging
-import os
-from pathlib import Path
-
-import voluptuous as vol
-
 from homeassistant.components.notify import (
     ATTR_DATA,
-    ATTR_TARGET,
     ATTR_TITLE,
     ATTR_TITLE_DEFAULT,
     ATTR_MESSAGE,
-    PLATFORM_SCHEMA,
     BaseNotificationService,
 )
 from homeassistant.const import (
@@ -22,8 +14,6 @@ from homeassistant.const import (
     CONF_NAME,
 )
 from homeassistant.core import HomeAssistant
-from homeassistant.exceptions import ServiceValidationError
-import homeassistant.helpers.config_validation as cv
 from homeassistant.helpers.reload import setup_reload_service
 from homeassistant.helpers.typing import ConfigType, DiscoveryInfoType
 
@@ -32,8 +22,6 @@ from .const import (
 )
 
 PLATFORMS = [Platform.NOTIFY]
-
-_LOGGER = logging.getLogger(__name__)
 
 
 def get_service(
@@ -54,11 +42,7 @@ def get_service(
 class EventNotificationService(BaseNotificationService):
     """Implement the notification service for Events."""
 
-    def __init__(
-        self,
-        hass: HomeAssistant,
-        event_id: str
-    ):
+    def __init__(self, hass: HomeAssistant, event_id: str):
         """Initialize the service."""
         self._hass = hass
         self.event_id = event_id
