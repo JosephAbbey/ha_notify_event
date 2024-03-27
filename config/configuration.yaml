@@ -1,0 +1,12 @@
+# https://www.home-assistant.io/integrations/default_config/
+default_config:
+
+# https://www.home-assistant.io/integrations/logger/
+logger:
+  default: info
+  logs:
+    custom_components.notify_event: debug
+
+notify:
+  - platform: notify_event
+    name: test

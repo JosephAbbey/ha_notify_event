@@ -1,0 +1,1 @@
+"""The Notify Event integration."""

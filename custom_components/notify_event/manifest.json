@@ -1,0 +1,8 @@
+{
+    "domain": "notify_event",
+    "name": "Notify Event",
+    "codeowners": ["@josephabbey"],
+    "documentation": "https://home.abbey1.org.uk/",
+    "iot_class": "local_push",
+    "version": "0.0.0"
+}
