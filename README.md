@@ -24,8 +24,6 @@ notify:
 1. Restart Home Assistant
 1. In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "Integration blueprint"
 
-## Configuration is done in the UI
-
 <!---->
 
 ## Contributions are welcome!
